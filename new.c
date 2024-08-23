@@ -42,6 +42,5 @@ int main() {
     }
     bool ultimi_cifre = (len >= 2) &&
                         ispunct(password[len-1]) &&
-                        ispunct(password[len -2]);
-   printf("hasan dardashti");
+                        ispunct(
 }
