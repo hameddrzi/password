@@ -6,11 +6,11 @@
 
 int main() {
 
-    char password[MAX_C+ 1];
-    scanf("%20s", password);
+   // char password[MAX_C+ 1];
+    //scanf("%20s", password);
 
 
-    bool esiste_cifre = false ; //P1
+//    bool esiste_cifre = false ; //P1
 
     for (size_t i = 0; password[i] && !esiste_cifre ; ++i) {
         if(isdigit(password[i]))
