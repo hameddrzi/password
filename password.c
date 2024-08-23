@@ -9,7 +9,16 @@ int main() {
     char password[MAX_C+ 1];
     scanf("%20s", password);
 
- ; ++i) {
+
+    bool esiste_cifre = false ; //P1
+
+    for (size_t i = 0; password[i] && !esiste_cifre ; ++i) {
+        if(isdigit(password[i]))
+            esiste_cifre = true;
+    }
+
+    bool lettere = false;  //P2
+    for (size_t i = 0; password[i] && !lettere ; ++i) {
         if(!(isalpha(password[i])))
             esiste_cifre = true;
     }
@@ -18,7 +27,12 @@ int main() {
     for (size_t i = 0; password[i] && !due_maiuscole ; ++i) {
         if(2 > (isupper(password[i])))
             due_maiuscole = true;
-    }[i]) && isdigit(password[i -1]))
+    }
+
+    bool cifre_consentive = false;
+    if(password[0] != '\0'){
+        for (size_t i = 0; password[i] && !cifre_consentive ; ++i) {
+            if(isdigit(password[i]) && isdigit(password[i -1]))
                 cifre_consentive = true;
         }
     }
@@ -27,7 +41,7 @@ int main() {
         len++;
     }
     bool ultimi_cifre = (len >= 2) &&
-            ispunct(password[len-1]) &&
-            ispunct(password[len -2]);
+                        ispunct(password[len-1]) &&
+                        ispunct(password[len -2]);
 
-}
+}ااااااااااااااااااااااااا
