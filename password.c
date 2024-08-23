@@ -44,4 +44,4 @@ int main() {
                         ispunct(password[len-1]) &&
                         ispunct(password[len -2]);
 
-}ااااااااااااااااااااااااا
+}
