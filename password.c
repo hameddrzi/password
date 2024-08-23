@@ -18,12 +18,7 @@ int main() {
     for (size_t i = 0; password[i] && !due_maiuscole ; ++i) {
         if(2 > (isupper(password[i])))
             due_maiuscole = true;
-    }
-
-    bool cifre_consentive = false;
-    if(password[0] != '\0'){
-        for (size_t i = 0; password[i] && !cifre_consentive ; ++i) {
-            if(isdigit(password[i]) && isdigit(password[i -1]))
+    }[i]) && isdigit(password[i -1]))
                 cifre_consentive = true;
         }
     }
